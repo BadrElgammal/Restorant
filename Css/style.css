@@ -243,11 +243,11 @@ h3 {
 @media screen and (max-width: 820px) {
     .carousel
     {
-        height: 80vh;
+        height: 90vh;
     }
     .layer
     {
-        height: 80vh;
+        height: 90vh;
     }
     .carousel-caption {
         width: auto;
