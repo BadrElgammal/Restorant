@@ -1,0 +1,62 @@
+.contanerproduct
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 100px 10px;
+}
+.image
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 40px;
+}
+.contanerproduct .smallimges
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+.contanerproduct .smallimges img
+{
+    height: 120px;
+    object-fit: cover;
+    width: 80px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.contanerproduct .bigImage
+{
+    max-height: 450px;
+    max-width: 400px;
+    border-radius: 15px;
+    margin: 0 30px;
+}
+.contanerproduct .caption
+{
+    font-size: 30px;
+    max-width: 400px;
+    width: auto;
+    font-family: "Alegreya Sans";
+}
+.contanerproduct .caption h3
+{
+    font-family: "Alegreya";
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+@media screen and (max-width :800px)
+{
+    .contanerproduct .smallimges
+    {
+        flex-direction: row;
+        margin: 30px 0;
+    }
+}

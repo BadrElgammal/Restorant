@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/navHome.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/footer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg  defultNav ">
+    
+    <div class="container-fluid">
+        <img id="navLogo" src="./images/restaurant-2-light.png" alt="">
+        <div class="links">
+            <button class="navbar-toggler" type="button" onclick="toggleSidebar()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Html/products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Html/About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Html/contacatUs.html">Contact Us</a>
+                    </li> 
+                    <li class="nav-item">
+                        <div class="loginAndRegister">
+                            <a class="nav-link" href="./Html/register.html">Register</a>
+                            <div class="linelogin"></div>
+                            <a class="nav-link" href="./Html/login.html">login</a>
+                        </div>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+    <a href="#">Home</a>
+    <a href="./Html/products.html">Products</a>
+    <a href="./Html/About.html">About</a>
+    <a href="./Html/contacatUs.html">Contact Us</a>
+    <div class="loginAndRegister">
+        <a class="nav-link" href="./Html/register.html">Register</a>
+        <div class="linelogin"></div>
+        <a class="nav-link" href="./Html/login.html">login</a>
+    </div>
+</div>
+
+<div id="carouselExampleCaptions" class="carousel slide p-relative" data-bs-ride="carousel" data-bs-interval="3000" >
+    <div class="carousel-indicators zindex-10">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="./images/shutterstock_277750193.jpg" class="d-block w-100 h-100" alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./images/hero_bg_1.jpg" class="d-block w-100 h-100" alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./images/hero_bg_2.jpg" class="d-block w-100 h-100" alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./images/hero_bg_3.jpg" class="d-block w-100 h-100" alt="...">
+    </div>
+    </div>
+    <button class="carousel-control-prev zindex-10" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next zindex-10" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    
+        <div class="carousel-caption  d-md-block zindex-10">
+            <div class="home-caption">
+                <img src="./images/restaurant.png" alt="">
+                <h1>French Restaurant</h1>
+                <div class="typing-container">
+                    <p class="typing-text"></p>
+                </div>                
+                <div class="btns">
+                   <button class="btn1">Learn More</button>
+                   <button class="btn2">Book a Visit</button>
+                </div>
+                <div class="scroll">
+
+                </div>
+          </div>
+        </div>
+        <div class="up-icon position-fixed">
+            <a href="#"><img src="./images/icons8-up-50.png" alt=""></a>
+        </div>
+</div>
+<div class="layer p-absolute">
+        
+</div>
+
+
+<div class="section2 pt-5 pb-5">
+    <img class="image1" src="./images/chef-5.png" alt="">
+    <div class="caption">
+        <h3>We are a family business</h3>
+        <h4>And we all love what we do.</h4>
+        <p class="mt-5 mb-5">We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
+        <div class="logo">
+            <img src="./images/icons8-leaf-64.png" alt="">
+            <p>We care about environment.</p>
+        </div>
+        <div class="logo">
+            <img src="./images/icons8-team-24.png" alt="">
+            <p>We are trusted by hundreds of clients.</p>
+        </div>
+        <div class="logo">
+            <img src="./images/icons8-love-48.png" alt="">
+            <p>Social media loves us!</p>
+        </div>
+        <div class="logo">
+            <img src="./images/icons8-select-checkmark-symbol-to-choose-true-answer-24 (1).png" alt="">
+            <p>This list is super easy to create.</p>
+        </div>
+    </div>
+</div>
+<div class="section3 pt-5 pb-5">
+    <div class="caption">
+        <h3>Reviewers like us</h3>
+        <h4>Wanna know why?</h4>
+        <p class="mt-5 mb-5">We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme. Everyday it make our lives better.</p>
+        <div class="logo">
+            <img src="./images/icons8-like-48.png" alt="">
+            <p>Aliquam fermentum lorem quis posuere mattis.</p>
+        </div>
+        <div class="logo">
+            <img src="./images/icons8-like-48.png" alt="">
+            <p>Sed mollis sapien erat id pellentesque libero.</p>
+        </div>
+        <div class="logo">
+            <img src="./images/icons8-like-48.png" alt="">
+            <p>Pellentesque nisl id semper bibendum.</p>
+        </div>
+    </div>
+    <img class="image" src="./images/6-800x640.jpg" alt="">
+</div>
+
+<div class="section4">
+<div class="contaner">
+    
+</div>
+</div>
+
+
+
+<footer>
+    <div class="section1f">
+        <div class="part">
+            <h3>About us</h3>
+            <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur.</p>
+            <p>We are the champions! We are the most amazing theme of all time, yeah.</p>
+        </div>
+        <div class="part">
+            <h3>Useful Links</h3>
+            <a href="./Html/products.html">> products</a>
+            <div class="linee"></div>
+            <a href="./Html/About.html">> About</a>
+            <div class="linee"></div>
+            <a href="./Html/contacatUs.html">> Contact Us</a>
+        </div>
+        <div class="part">
+            <h3>Opening Hours</h3>
+            <p>> Monday 10AM – 9PM</p>
+            <div class="linee"></div>
+            <p>> Tuesday 10AM – 9PM</p>
+            <div class="linee"></div>
+            <p>> Wednesday 10AM – 9PM</p>
+            <div class="linee"></div>
+            <p>> Thursday 10AM – 10PM</p>
+            <div class="linee"></div>
+            <p>> Friday 10AM – 10PM</p>
+            <div class="linee"></div>
+            <p>> Weekends 10AM – 11PM</p>
+        </div>
+        <div class="part">
+            <h3>Contact Details</h3>
+            <div class="textfooter">
+                <img src="./images/icons8-location-50.png" alt="">
+                <p>Manchester Road 123-78B, Silictown 7854MD, Great Country</p>
+            </div>
+            <div class="linee"></div>
+            <div class="textfooter">
+                <img src="./images/icons8-phone-50.png" alt="">
+                <p>+#########</p>
+            </div>
+            <div class="linee"></div>
+            <div class="textfooter">
+                <img src="./images/icons8-email-50.png" alt="">
+                <p>hello@sitename.com</p>
+            </div>
+            <div class="linee"></div>
+            <div class="textfooter">
+                <img src="./images/icons8-earth-50.png" alt="">
+                <p>Manchester Road 123-78B, Silictown 7854MD, Great Country</p>
+            </div>
+        </div>
+    </div>
+    <div class="section2f">
+        <img src="./images/restaurant.png" alt="">
+        <p>Copyright 2024. All rights reserved.</p>
+        <div class="socialMedia">
+            <img class="facebook" src="./images/icons8-facebook-30 (1).png" alt="">
+            <img class="instagram" src="./images/icons8-instagram-50.png" alt="">
+            <img class="twitter" src="./images/icons8-twitter-50.png" alt="">
+        </div>
+    </div>
+</footer>
+  
+
+
+<div class="clear-fix"></div>
+    <script src="./js/navHome.js"></script>
+    <script src="./js/scriptHome.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

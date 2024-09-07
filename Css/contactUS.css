@@ -1,0 +1,158 @@
+p
+{
+    font-family: "Alegreya Sans";
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: "Alegreya";
+}
+.section1
+{
+    text-align: center;
+    padding: 100px 0 50px 0;
+    background-color: #f7f7f7;
+}
+.section1 .link
+{
+    display: flex;
+    justify-content: center;
+}
+.section1 .link a
+{
+    text-decoration: none;
+    color:#333;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.section2
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.div-inp-form
+{
+    text-align: center;
+    width: 600px;
+    padding: 50px;
+}
+.div-inp-form .inp
+{
+    margin-bottom: 15px;
+}
+.div-inp-form .inp input,textarea
+{
+    width: 100%;
+    margin-top: 8px;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #33333346;
+}
+
+.div-inp-form .inp input:focus
+{
+    box-shadow: 0px 0px 4px #000;
+}
+.div-inp-form button
+{
+    width: 80px;
+    margin: 20px 0;
+    padding: 12px 0;
+    font-size: 18px;
+    font-weight: bold;
+    background: #c1ab84;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow: -2px 2px 6px #000;
+}
+.div-inp-form button:hover
+{
+    background-color: #000;
+}
+.section2 .div-text
+{
+    max-width: 600px;
+    padding: 40px;
+}
+.section2 p
+{
+    color: #686f76;
+}
+.section2 .div-text .logo
+{
+    display: flex;
+    margin: 10px 0;
+}
+.section2 .div-text .logo i
+{
+    color: #fff;
+    background: #c1ab84;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    line-height: 36px;
+    font-size: 18px;
+    top: 10px;
+    text-align: center;
+    margin: 0 10px;
+}
+table {
+    width: 20px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-size: 16px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #c5ab84;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fff;
+}
+
+/* تحسين شكل الأزرار داخل الجدول */
+td button {
+    background-color: #a6895f;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+td button:hover {
+    background-color: #8b6b47;
+}
+
+/* تحسين المظهر عند التحويم على صفوف الجدول */
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* تنسيق خاص بصف الحذف والتعديل */
+.action-btn {
+    text-align: center;
+}
+
+/* تحسين شكل القائمة */
+.feedback-list-title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
