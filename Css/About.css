@@ -51,7 +51,7 @@ body
     flex-wrap: wrap;
     line-height: 40px;
     font-size: 19px;
-    padding: 50px;
+    padding: 40px;
 }
 .section2 .contaner
 {
@@ -77,7 +77,6 @@ body
 .section2 .text .supText .supTextItem
 {
     max-width: 270px;
-    margin-right: 30px;
     margin-bottom: 30px;
 }
 .section2 .text h3
@@ -174,4 +173,11 @@ h3
     width: 400px;
     text-align: left;
     margin: 30px;
+}
+@media screen and (max-width: 820px)
+{
+    .section4 .image
+    {
+        width: 300px;
+    }
 }

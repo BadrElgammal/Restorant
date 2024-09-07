@@ -18,6 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .home-caption {
@@ -158,29 +159,13 @@
     overflow: hidden;
 }
 
-@media screen and (max-width: 820px) {
-    .carousel-caption {
-        width: auto;
-    }
-    .home-caption img {
-        max-width: 300px;
-    }
-    .home-caption h1 {
-        font-size: 50px;
-    }
-    .home-caption p {
-        font-size: 30px;
-    }
-    .btns button {
-        padding: 15px 20px;
-    }
-}
 
 .section2 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 50px 0;
 }
 .section2 .image1
 {
@@ -253,4 +238,36 @@ h3 {
     background-size: cover;
     background-position: center center;
     overflow: hidden;
+}
+
+@media screen and (max-width: 820px) {
+    .carousel
+    {
+        height: 80vh;
+    }
+    .layer
+    {
+        height: 80vh;
+    }
+    .carousel-caption {
+        width: auto;
+    }
+    .home-caption img {
+        max-width: 300px;
+    }
+    .home-caption h1 {
+        font-size: 50px;
+    }
+    .home-caption p {
+        font-size: 25px;
+    }
+    .btns button {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 12px 13px;
+    }
+    .section2 .caption  img
+    {
+        width: 30px;
+    }
 }
