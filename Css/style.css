@@ -239,7 +239,6 @@ h3 {
     background-position: center center;
     overflow: hidden;
 }
-
 @media screen and (max-width: 820px) {
     .carousel
     {
