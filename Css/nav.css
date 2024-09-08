@@ -8,6 +8,10 @@ body
 {
     font-family: "Alegreya Sans";
 }
+.account
+{
+    display: none;
+}
 html
 {
     scroll-behavior: smooth;
@@ -26,6 +30,9 @@ html
     transition: .6s;
     background-color: white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.defultNav .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="%23ffffff" class="bi bi-list" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2.5 12.5a.5.5 0 010-1h11a.5.5 0 010 1h-11zm0-5a.5.5 0 010-1h11a.5.5 0 010 1h-11zm0-5a.5.5 0 010-1h11a.5.5.5 0 010 1h-11z" /></svg>');
 }
 .whiteNav .nav-link,.defultNav .nav-link
 {

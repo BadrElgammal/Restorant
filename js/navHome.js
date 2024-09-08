@@ -29,3 +29,24 @@ window.addEventListener("scroll",function()
         up_icon.style.display="none";
     }
 })
+
+let loginAndRegister=document.querySelector(".loginAndRegister");
+let account=document.querySelector(".account");
+let loginAndRegisterSidepar=document.querySelector(".loginAndRegisterSidepar");
+let accountSidepar=document.querySelector(".accountSidepar");
+
+    let loggedInUser = sessionStorage.getItem('loggedInUser');
+    if (!loggedInUser) {
+        loginAndRegister.style.display="flex";
+        account.style.display="none";
+        loginAndRegisterSidepar.style.display="flex";
+        accountSidepar.style.display="none";
+    }
+    else
+    {
+        console.log("innone")
+        loginAndRegister.style.display="none";
+        account.style.display="block";
+        loginAndRegisterSidepar.style.display="none";
+        accountSidepar.style.display="block";
+    }

@@ -1,3 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'segoe ui light';
+    font-family: Alegreya;
+}
+.section1
+{
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section1 img
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-position: center center;
+}
+.section1 .text
+{
+    text-align: center;
+    position: absolute;
+    font-size: 22px;
+    line-height: 1.38em;
+}
+.section1 .text h3
+{
+    font-size: 30px;
+    margin: 25px 0;
+}
+.section1 .text p
+{
+    color: white;
+}
 .contanerproduct {
     display: flex;
     flex-direction: row;
