@@ -107,9 +107,9 @@ function displayProduct(product) {
     document.querySelector(".contanerproduct").innerHTML = carton;
 
 }
-let bigImage = document.querySelector(".bigImage");
 
 function switchImage(sorc) {
+    let bigImage = document.querySelector(".bigImage");
     bigImage.src = sorc;
 }
 var btnInfo=document.querySelector(".btnInfo");
