@@ -51,6 +51,20 @@ html
     height: 80px;
     color: white;
 }
+.loginAndRegister
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 10px;
+}
+.linelogin
+{
+    width: 10px;
+    height: 100%;
+    color:#949494;
+}
 .navbar
 {
     width: 100vw;

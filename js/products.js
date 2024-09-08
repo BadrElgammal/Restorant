@@ -1,4 +1,3 @@
-let imageIndex;
 var container = document.querySelector(".contanir");
 let products=[];
 async function getData() {
@@ -22,10 +21,11 @@ async function getData() {
         container.innerHTML += cartona;
         initializeLightBox();
     } catch (error) {
-        console.log("Error fetching products:", error);
+        console.error("Error fetching products:", error);
     }
 }
 getData();
+let imageIndex;
 function initializeLightBox() {
     var lightBoxContainer = document.getElementById("lightBoxContanir");
     var imgs = Array.from(document.querySelectorAll(".item img"));
@@ -60,7 +60,6 @@ function initializeLightBox() {
 
     function updateLightBoxImage() {
         var src = imgs[index].getAttribute("src");
-        imageIndex=index;
         lightBoxItem.style.backgroundImage = `url(${src})`;
     }
 
@@ -71,20 +70,23 @@ function initializeLightBox() {
     });
 }
 function gobageproduct(index) {
-    imageIndex = index;
-    sessionStorage.setItem('imageIndex', imageIndex);
-    window.location.href = `../Html/product.html`;
+    window.location.href = `product.html?index=${index}`;
 }
+
 window.onload = function() {
-    let imageIndex = sessionStorage.getItem('imageIndex');
-    if (imageIndex >= 0 && imageIndex < products.length) {
-        let product = products[imageIndex];
+    const urlParams = new URLSearchParams(window.location.search);
+    const productIndex = urlParams.get('index');
+        if (productIndex < 0 || productIndex >= products.length) {
+            console.error("Invalid product index:", productIndex);
+            return;
+        }
+        const product = products[productIndex];
         displayProduct(product);
-    }
-}
+};
+
 function displayProduct(product) {
     if (!product) {
-        console.log("Product not found");
+        console.error("Product not found");
         return;
     }
 
@@ -106,10 +108,10 @@ function displayProduct(product) {
     `;
     document.querySelector(".contanerproduct").innerHTML = carton;
 
+    bigImage = document.querySelector(".bigImage");
 }
 
 function switchImage(sorc) {
-    let bigImage = document.querySelector(".bigImage");
     bigImage.src = sorc;
 }
 var btnInfo=document.querySelector(".btnInfo");
@@ -144,6 +146,3 @@ function search(value)
     }
     document.querySelector('.contanir').innerHTML=cartoona;
 }
-
-
-
