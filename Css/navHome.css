@@ -113,7 +113,6 @@ html
     display: none;
     transition: .5s;
 }
-/* إعدادات القائمة الجانبية */
 .sidebar {
     height: 100%;
     width: 0;
@@ -147,8 +146,6 @@ html
     font-size: 36px;
     margin-left: 50px;
 }
-
-/* لإظهار زر الهامبرغر عند العرض على الشاشات الصغيرة */
 .navbar-toggler {
     border: none;
     background-color: transparent;

@@ -98,17 +98,16 @@ html
     display: none;
     transition: .5s;
 }
-/* إعدادات القائمة الجانبية */
 .sidebar {
     height: 100%;
-    width: 0;  /* يبدأ العرض من 0 */
+    width: 0;
     position: fixed;
     z-index: 1000;
     top: 0;
     right: 0;
     background-color: #111;
     overflow-x: hidden;
-    transition: width 0.5s ease;  /* تعديل بسيط هنا لجعل الفتح والإغلاق أكثر سلاسة */
+    transition: width 0.5s ease; 
     padding-top: 60px;
 }
 
@@ -132,7 +131,6 @@ html
     font-size: 36px;
 }
 
-/* ضبط المظهر عند فتح القائمة */
 .sidebar.open {
     width: 250px;
 }

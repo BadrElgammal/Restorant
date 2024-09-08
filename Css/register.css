@@ -56,3 +56,13 @@ body
     border-radius: 10px;
     cursor: pointer;
 }
+.div-form .login
+{
+    text-align: center;
+}
+.div-form .login a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}

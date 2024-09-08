@@ -35,8 +35,6 @@ function typeAndEraseText() {
         setTimeout(typeAndEraseText, delayBetweenTexts);
     }
 }
-
-// بدء التأثير عند تحميل الصفحة
 window.onload = typeAndEraseText;
 
 

@@ -1,11 +1,9 @@
-/* Reset بعض الأنماط الافتراضية */
+
 body, h1, p, img {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* تصميم الحاوية الرئيسية */
 .profile-container {
     width: 350px;
     margin: 50px auto;
@@ -16,8 +14,6 @@ body, h1, p, img {
     text-align: center;
     font-family: Arial, sans-serif;
 }
-
-/* تصميم صورة البروفايل */
 .profile-picture img {
     width: 150px;
     height: 150px;
@@ -25,8 +21,6 @@ body, h1, p, img {
     margin-bottom: 20px;
     border: 2px solid #ccc;
 }
-
-/* معلومات البروفايل */
 .profile-info h1 {
     font-size: 20px;
     color: #333;

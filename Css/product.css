@@ -96,20 +96,14 @@ body
     font-size: 40px;
 }
 
-/* إعدادات الشاشة الصغيرة */
 @media screen and (max-width: 800px) {
-    .contanerproduct {
-        flex-direction: column;
-        margin: 50px 10px;
-    }
-
     .image {
         margin-right: 0;
     }
 
     .contanerproduct .bigImage {
-        max-height: 300px;
-        max-width: 100%;
+        max-height: 250px;
+        max-width: 80%;
         margin: 20px 0;
     }
 

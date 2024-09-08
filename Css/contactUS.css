@@ -125,8 +125,6 @@ th {
 td {
     background-color: #fff;
 }
-
-/* تحسين شكل الأزرار داخل الجدول */
 td button {
     background-color: #a6895f;
     border: none;
@@ -140,18 +138,12 @@ td button {
 td button:hover {
     background-color: #8b6b47;
 }
-
-/* تحسين المظهر عند التحويم على صفوف الجدول */
 tr:hover {
     background-color: #f5f5f5;
 }
-
-/* تنسيق خاص بصف الحذف والتعديل */
 .action-btn {
     text-align: center;
 }
-
-/* تحسين شكل القائمة */
 .feedback-list-title {
     text-align: center;
     font-size: 24px;
