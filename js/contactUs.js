@@ -12,8 +12,6 @@ if (localStorage.getItem("feedbacks") === null) {
     feedbacks = JSON.parse(localStorage.getItem("feedbacks"));
     displayFeedback();
 }
-
-// دالة للتحقق من أن الحقول غير فارغة
 function checkEmpty() {
     return name.value === "" || email.value === "" || Subject.value === "" || message.value === "";
 }
@@ -21,7 +19,7 @@ function checkEmpty() {
 function addFeedback() {
     if (checkEmpty()) {
         alert("Please fill in all fields!");
-        return; // إيقاف العملية إذا كانت الحقول فارغة
+        return;
     }
 
     let feedback = {
@@ -37,8 +35,6 @@ function addFeedback() {
     clearForm();
     displayFeedback();
 }
-
-// وظيفة لمسح الحقول بعد الإرسال
 function clearForm() {
     name.value = "";
     email.value = "";

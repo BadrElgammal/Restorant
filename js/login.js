@@ -6,12 +6,9 @@ let form = document.querySelector('form');
 let lsData = JSON.parse(localStorage.getItem('users'));
 let users = [...lsData];
 let data = [];
-
-// التحقق من تسجيل الدخول عند تحميل الصفحة
 window.onload = function() {
     let loggedInUser = sessionStorage.getItem('loggedInUser');
     if (loggedInUser) {
-        // إذا كان هناك مستخدم مسجل الدخول في sessionStorage، انتقل إلى الصفحة الرئيسية
         window.location.href = "../index.html";
     }
 };
